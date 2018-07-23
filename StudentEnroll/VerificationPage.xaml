@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StudentEnroll.VerificationPage">
+
+    <StackLayout Orientation="Vertical">
+
+
+        <Label Text="Enter 123 to continue"/>
+        <Entry x:Name="CodeEntry" Placeholder="Verification Code"/> 
+        <Button Text="Change Code" Clicked="ChangeCode_Clicked"/>
+    </StackLayout>
+</ContentPage>

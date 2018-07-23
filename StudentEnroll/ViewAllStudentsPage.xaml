@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentEnroll.ViewAllStudentsPage"
+             Title="View All">
+
+    <ListView x:Name="StudentsListView" ItemTapped="Students_ItemTapped">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Image>
+                            <Image.Source>
+                                <UriImageSource Uri="{Binding ImageUrl}"></UriImageSource>
+                            </Image.Source>
+                        </Image>
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding Name}"/>
+                            <Label Text="{Binding Summary}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
